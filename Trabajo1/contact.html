@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/about-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"></div>
+            <a href="index.html">
+                <img class="Img" src="/img/Icon.large" alt="Icon">
+            </a>
+            <h2>Saga Computacion</h2>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <form class="search-form" action="/buscar" method="GET">
+                <input type="search" name="query" placeholder="Buscar..." class="search-input">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </nav>
+    </header>
+    <div class="Contenedor">
+        <h1>Contacto</h1>
+        <p>Por favor, complete el siguiente formulario para ponerse en contacto con nosotros. Nos pondremos en contacto con usted lo antes posible.</p>
+        <form action="/enviar" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </div>
+    <div class="faq-container">
+        <div class="faq-header">
+            <h1>Preguntas Frecuentes</h1>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Qué es Saga Computación?</div>
+            <div class="faq-answer">Saga Computación es una tienda especializada en hardware, periféricos y equipos de computación, ofreciendo productos de alta calidad y soluciones tecnológicas a nuestros clientes.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo puedo contactar con soporte técnico?</div>
+            <div class="faq-answer">Puede contactar con nuestro soporte técnico a través del número de teléfono +1 234 567 890 o enviándonos un correo a contacto@sagacomputacion.com.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Ofrecen garantía en sus productos?</div>
+            <div class="faq-answer">Sí, todos nuestros productos vienen con una garantía mínima de un año. Para más detalles sobre garantías específicas, consulte la descripción del producto.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Realizan envíos internacionales?</div>
+            <div class="faq-answer">Actualmente, solo realizamos envíos dentro del país. Estamos trabajando para ofrecer envíos internacionales en el futuro.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo puedo realizar un pedido?</div>
+            <div class="faq-answer">Para realizar un pedido, simplemente agregue los productos que desea a su carrito de compras y siga el proceso de pago en nuestro sitio web. Si necesita ayuda, nuestro equipo de atención al cliente está disponible para asistirle.</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Saga Computación</h2>
+                <p>Somos una empresa dedicada a ofrecer las mejores soluciones en tecnología y electrónica. Encuentra los mejores productos y herramientas para tus proyectos.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="/img/Face.png" alt="Facebook"></a>
+                    <a href="#"><img src="/img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="/img/insta.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="/Index.html">Inicio</a></li>
+                    <li><a href="/about.html">Acerca de Nosotros</a></li>
+                    <li><a href="/contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><img src="/img/cel.png" alt="Teléfono"> +1 234 567 890</li>
+                    <li><img src="/img/mail.png" alt="Email"> contacto@sagacomputacion.com</li>
+                    <li><img src="/img/ubicacion.png" alt="Ubicación"> 123 Calle Principal, Ciudad, País</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Saga Computación. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
